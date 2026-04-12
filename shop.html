@@ -54,7 +54,7 @@ body { background: #000; color: #fff; font-family: 'Helvetica Neue', Helvetica, 
 <div class="product-section">
 <div class="section-inner">
 <div class="product-title">THE COMPLETE COLLECTION</div>
-<div class="product-desc">The Master Key. Everything you need. 120+ interactive cards. Precisely selected must-know phrases Parisians actually use. From first glance to last glass. Every essential line to navigate with natural confidence and effortless presence. Don't just visit. Live it. Audio included.</div>
+<div class="product-desc">The Master Key. Everything you need. 120+ interactive interfaces. Precisely selected must-know phrases Parisians actually use. From first glance to last glass. Every essential line to navigate with natural confidence and effortless presence. Don't just visit. Live it. Audio included.</div>
 
 <div class="preview-container">
 <div class="tabs-container">
@@ -96,7 +96,7 @@ body { background: #000; color: #fff; font-family: 'Helvetica Neue', Helvetica, 
 <div class="product-section">
 <div class="section-inner">
 <div class="product-title">ROMANCE</div>
-<div class="product-desc">The Edge. 60 sharp phrases. Curated phrases used in real Paris romantic situations. The words that create tension, suggest desire, and take you out of the ordinary. Know your game. Seduce with confidence. Audio included.</div>
+<div class="product-desc">The Edge. 60 sharp interfaces. Curated phrases used in real Paris romantic situations. The words that create tension, suggest desire, and take you out of the ordinary. Know your game. Seduce with confidence. Audio included.</div>
 
 <div class="preview-container">
 <div class="tabs-container">
@@ -136,7 +136,7 @@ body { background: #000; color: #fff; font-family: 'Helvetica Neue', Helvetica, 
 <div class="product-section">
 <div class="section-inner">
 <div class="product-title">WINE & DINE</div>
-<div class="product-desc">The Presence. 60 essential phrases. The essential phrases Parisians actually use at the table. From choosing the wine to the moment. Own the table. Indulge the experience. Audio included.</div>
+<div class="product-desc">The Presence. 60 essential interfaces. The essential phrases Parisians actually use at the table. From choosing the wine to the moment. Own the table. Indulge the experience. Audio included.</div>
 
 <div class="preview-container">
 <div class="tabs-container">
@@ -268,8 +268,7 @@ function speak(prod, e) {
   utterance.volume = 1;
   
   const voices = speechSynthesis.getVoices();
-  const femaleVoice = voices.find(v => (v.lang.includes('fr-FR') || v.lang.includes('fr')) && v.name.toLowerCase().includes('female')) 
-    || voices.find(v => (v.lang.includes('fr-FR') || v.lang.includes('fr')));
+  const femaleVoice = voices.find(v => v.lang.includes('fr-FR') && v.name.toLowerCase().includes('female'));
   if (femaleVoice) utterance.voice = femaleVoice;
   
   speechSynthesis.speak(utterance);
