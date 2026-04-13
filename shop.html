@@ -277,19 +277,16 @@ function speak(prod, e) {
   const utterance = new SpeechSynthesisUtterance(text);
   utterance.lang = 'fr-FR';
   utterance.rate = 0.8;
-  utterance.pitch = 1.8;
+  utterance.pitch = 1;
   utterance.volume = 1;
   
   const voices = speechSynthesis.getVoices();
-  const femaleVoice = voices.find(v => v.name.toLowerCase().includes('female') && (v.lang.includes('fr-FR') || v.lang.includes('fr') || v.lang === 'fr')) 
-    || voices.find(v => (v.lang.includes('fr-FR') || v.lang.includes('fr')) && !v.name.toLowerCase().includes('male'))
-    || voices.find(v => v.lang.includes('fr'));
+  const femaleVoice = voices.find(v => (v.lang.includes('fr-FR') || v.lang.includes('fr')) && v.name.toLowerCase().includes('female')) 
+    || voices.find(v => (v.lang.includes('fr-FR') || v.lang.includes('fr')));
   if (femaleVoice) utterance.voice = femaleVoice;
   
   speechSynthesis.speak(utterance);
 }
-
-if (speechSynthesis.onvoiceschanged !== undefined) speechSynthesis.onvoiceschanged = () => speechSynthesis.getVoices();
 
 function switchTab1(t) { tab1 = t; card1 = 0; updateCard(1); }
 function switchTab2(t) { tab2 = t; card2 = 0; updateCard(2); }
