@@ -24,6 +24,7 @@ body { background: #000; color: #fff; font-family: 'Helvetica Neue', Helvetica, 
 .tab-btn { background: transparent; color: #666; border: none; padding: 8px 0; font-size: 11px; letter-spacing: 2px; text-transform: uppercase; cursor: pointer; border-bottom: 1px solid transparent; }
 .tab-btn.active { color: #fff; border-bottom: 1px solid #fff; }
 
+/* === FIXED CARD SIZE - SAME FOR ALL THREE PRODUCTS === */
 .card-wrapper { 
   width: 100%; 
   max-width: 420px; 
@@ -32,7 +33,7 @@ body { background: #000; color: #fff; font-family: 'Helvetica Neue', Helvetica, 
 
 .card { 
   width: 100%; 
-  height: 520px; 
+  height: 540px;           /* ← fixed height, same on every card */
   position: relative; 
   transform-style: preserve-3d; 
   transition: transform 0.55s cubic-bezier(0.4, 0, 0.2, 1); 
@@ -294,7 +295,7 @@ const dating2 = [{ french: "Tu me fais rire", english: "You make me laugh", mean
 const wine3 = [{ french: "Vin de la maison", english: "House wine", meaning: "The insider's move" }];
 const dine3 = [{ french: "Saignant, s'il vous plaît", english: "Rare, please", meaning: "How Parisians order" }];
 
-// ==================== VARIABLES & FUNCTIONS ====================
+// ==================== SCRIPT ====================
 let tab1 = 'flirting', card1 = 0;
 let tab2 = 'flirting', card2 = 0;
 let tab3 = 'wine', card3 = 0;
@@ -324,7 +325,6 @@ function updateCard(prod) {
   document.getElementById('meaning' + id).textContent = c.meaning;
   document.getElementById('current' + id).textContent = card + 1;
   document.getElementById('total' + id).textContent = cards.length;
-  document.getElementById('card' + id).style.transform = 'rotateY(0deg)';
 }
 
 function flipCard(el) {
@@ -360,7 +360,6 @@ function speak(prod, e) {
 
 if (speechSynthesis.onvoiceschanged !== undefined) speechSynthesis.onvoiceschanged = () => speechSynthesis.getVoices();
 
-// Tab & navigation functions
 function switchTab1(t) { tab1 = t; card1 = 0; updateCard(1); }
 function switchTab2(t) { tab2 = t; card2 = 0; updateCard(2); }
 function switchTab3(t) { tab3 = t; card3 = 0; updateCard(3); }
