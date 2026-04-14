@@ -17,7 +17,24 @@ body { background: #000; color: #fff; font-family: 'Helvetica Neue', Helvetica, 
 .section-inner { max-width: 600px; margin: 0 auto; }
 
 .product-title { font-size: 20px; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 12px; font-weight: 400; text-align: center; }
-.product-info { font-size: 15px; color: #aaa; text-align: center; margin-bottom: 30px; line-height: 1.5; }
+
+/* Highlighted price line - exactly like your screenshot */
+.product-info { 
+  font-size: 15px; 
+  color: #ccc; 
+  text-align: center; 
+  margin-bottom: 30px; 
+  line-height: 1.5; 
+  font-weight: 400; 
+}
+
+.product-desc { 
+  font-size: 14px; 
+  color: #aaa; 
+  margin-bottom: 40px; 
+  line-height: 1.6; 
+  text-align: center; 
+}
 
 .preview-container { display: flex; flex-direction: column; align-items: center; margin-bottom: 40px; }
 .tabs-container { display: flex; gap: 16px; margin-bottom: 20px; justify-content: center; flex-wrap: wrap; }
@@ -209,7 +226,6 @@ body { background: #000; color: #fff; font-family: 'Helvetica Neue', Helvetica, 
 </div>
 
 <script>
-// ==================== TWO CARDS PER TAB ====================
 const flirt1 = [
   { french: "T'as un truc en plus", english: "You have something extra", meaning: "The compliment that lands" },
   { french: "T'es mon style", english: "You're my type", meaning: "Direct hit" }
