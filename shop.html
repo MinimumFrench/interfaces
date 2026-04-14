@@ -48,6 +48,8 @@ body { background: #000; color: #fff; font-family: 'Helvetica Neue', Helvetica, 
 .progress { font-size: 12px; color: #999; }
 
 .cta-buttons { display: flex; gap: 12px; flex-wrap: wrap; justify-content: center; margin-top: 30px; }
+
+/* Normal buttons for the card decks */
 .payhip-buy-button { 
   background: #fff !important; 
   color: #000 !important; 
@@ -58,6 +60,25 @@ body { background: #000; color: #fff; font-family: 'Helvetica Neue', Helvetica, 
   text-transform: uppercase !important; 
   font-weight: 500 !important; 
   text-decoration: none !important;
+}
+
+/* Special clean "Learn More" button for the €250 session */
+.learn-more-btn {
+  background: #fff;
+  color: #000;
+  border: 1px solid #fff;
+  padding: 12px 32px;
+  font-size: 11px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 500;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.learn-more-btn:hover {
+  background: #fff;
+  color: #000;
 }
 
 .footer { 
@@ -219,7 +240,7 @@ body { background: #000; color: #fff; font-family: 'Helvetica Neue', Helvetica, 
     <div class="product-desc" style="margin-top:20px; font-weight:400;">Paris doesn't reward trying. It rewards restraint.</div>
 
     <div class="cta-buttons">
-      <a href="https://payhip.com/b/e67iO" class="payhip-buy-button" data-theme="none">Learn More</a>
+      <a href="https://payhip.com/b/e67iO" class="learn-more-btn">Learn More</a>
     </div>
   </div>
 </div>
@@ -234,7 +255,7 @@ body { background: #000; color: #fff; font-family: 'Helvetica Neue', Helvetica, 
 </div>
 
 <script>
-/* Full script - unchanged */
+/* Full script (2 cards per tab) */
 const flirt1 = [{ french: "T'as un truc en plus", english: "You have something extra", meaning: "The compliment that lands" }, { french: "T'es mon style", english: "You're my type", meaning: "Direct hit" }];
 const dating1 = [{ french: "Tu me plais bien", english: "I like you", meaning: "Soft but clear" }, { french: "On se revoit ?", english: "See you again?", meaning: "Round two" }];
 const wine1 = [{ french: "On prend une bouteille ?", english: "Shall we get a bottle?", meaning: "Commitment move" }, { french: "Santé !", english: "Cheers!", meaning: "The one everyone uses" }];
