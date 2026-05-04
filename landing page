@@ -1,0 +1,135 @@
+<!-- THE THREE PILLARS: HELVETICA BLACK & WHITE MASTER -->
+<style>
+  body { 
+    background-color: #000; 
+    color: #fff; 
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; 
+    margin: 0; 
+    line-height: 1.5;
+  }
+  
+  /* Navigation */
+  .nav {
+    display: flex; justify-content: space-between; padding: 25px 50px;
+    font-size: 11px; letter-spacing: 0.25em; text-transform: uppercase;
+    border-bottom: 1px solid #1a1a1a;
+  }
+
+  /* Hero Section - The Portrait */
+  .hero {
+    display: grid; grid-template-columns: 1fr 1fr; height: 90vh;
+    border-bottom: 1px solid #1a1a1a;
+  }
+  .hero-content {
+    padding: 10% 50px; display: flex; flex-direction: column; justify-content: center;
+  }
+  .headline-main {
+    font-size: 72px; font-weight: 700; line-height: 0.85; letter-spacing: -0.05em; margin-bottom: 30px;
+  }
+  .hero-image {
+    background: url('IMG_4415 2.jpg') center/cover no-repeat;
+  }
+
+  /* Pillar Layout */
+  .pillar-section {
+    padding: 100px 50px; border-bottom: 1px solid #1a1a1a;
+  }
+  .pillar-label { 
+    font-size: 11px; color: #666; letter-spacing: 0.3em; text-transform: uppercase; margin-bottom: 20px; 
+  }
+  .pillar-title {
+    font-size: 42px; font-weight: 700; letter-spacing: -0.02em; margin-bottom: 25px;
+  }
+  .pillar-body {
+    max-width: 600px; font-size: 18px; font-weight: 300; color: #ccc; margin-bottom: 40px;
+  }
+
+  /* Buttons */
+  .btn-action {
+    display: inline-block; padding: 18px 40px; background: #fff; color: #000;
+    text-decoration: none; font-size: 11px; font-weight: 900; text-transform: uppercase; letter-spacing: 0.15em;
+  }
+
+  /* Bio / Contact */
+  .about-grid {
+    display: grid; grid-template-columns: 1fr 1fr; padding: 100px 50px; gap: 100px;
+  }
+  .bio-text { font-size: 15px; color: #888; line-height: 1.8; }
+  .quote-block {
+    font-size: 24px; font-style: italic; border-left: 3px solid #fff; padding-left: 30px; margin: 40px 0;
+  }
+</style>
+
+<div class="nav">
+  <span>Minimum French | Maximum Parisian</span>
+  <span>Consultancy • Volume • Digital</span>
+</div>
+
+<section class="hero">
+  <div class="hero-content">
+    <div class="headline-main">MINIMUM<br>FRENCH<br>MAXIMUM<br>PARISIAN</div>
+    <div class="pillar-body">“It’s not where you go — it’s how you experience it.”</div>
+    <p style="font-size: 14px; color: #666; max-width: 400px;">
+      A new way to experience and navigate the city through the mastery of cultural nuances. Transform how you move through Paris.
+    </p>
+  </div>
+  <div class="hero-image"></div>
+</section>
+
+<!-- PILLAR I: THE STRATEGY SESSION -->
+<section class="pillar-section">
+  <div class="pillar-label">I / Private Advisory</div>
+  <div class="pillar-title">The Strategy Session</div>
+  <div class="pillar-body">
+    A direct, 90-minute advisory with Rita Sant Valentinas. Tactical cultural intelligence for those who seek the quiet confidence of a native.
+    <ul style="list-style: none; padding: 0; margin-top: 30px; font-size: 16px; color: #fff;">
+      <li style="margin-bottom: 12px;">• The Social Code — Mastering unspoken rules.</li>
+      <li style="margin-bottom: 12px;">• The Inclusion Standard — How to enter and belong.</li>
+      <li style="margin-bottom: 12px;">• The Verbal Code — What to say and what to leave unsaid.</li>
+    </ul>
+  </div>
+  <a href="#" class="btn-action">Book the Session</a>
+</section>
+
+<!-- PILLAR II: THE BOOK -->
+<section class="pillar-section">
+  <div class="pillar-label">II / The Literary Volume</div>
+  <div class="pillar-title">The Blueprint.</div>
+  <div class="pillar-body">
+    Paris doesn’t hand out instruction manuals. A modern, witty take on the unspoken rules of Paris, written from a New York eye with honesty and clarity.
+    <p style="margin-top: 20px; color: #fff; font-weight: bold;">Includes the 11 essential observation codes.</p>
+  </div>
+  <p style="color: #666; font-style: italic; margin-bottom: 30px;">“Surprisingly exciting and light to read.” — Forbes France</p>
+  <a href="#" class="btn-action">Order the Volume</a>
+</section>
+
+<!-- PILLAR III: THE DIGITAL INTERFACE -->
+<section class="pillar-section">
+  <div class="pillar-label">III / The Cultural Deck</div>
+  <div class="pillar-title">Minimum French | Maximum Impact.</div>
+  <div class="pillar-body">
+    Your mobile gateway to the city’s interior. 120+ essential phrases with native French audio designed for immediate, real-world application. 
+    <p style="margin-top: 20px; color: #fff;">Dining & Wine • Flirting & Dating • Social Presence</p>
+  </div>
+  <a href="#" class="btn-action">Get the Collection</a>
+</section>
+
+<!-- ABOUT & CONTACT -->
+<section class="about-grid">
+  <div>
+    <div class="pillar-label">The Author</div>
+    <div class="headline-main" style="font-size: 32px;">Born in Lithuania.<br>Made in New York.<br>Refined in Paris.</div>
+    <div class="quote-block">"Paris becomes intoxicating when you know how to approach it. The rest follows."</div>
+  </div>
+  <div class="bio-text">
+    <p style="margin-bottom: 20px; color: #fff;">Rita is a Creative Director whose career spans luxury fashion and strategy for <strong>L’Oréal</strong>, <strong>Calvin Klein</strong>, and <strong>David Yurman</strong>.</p>
+    <p>Understanding human behavior is the key to navigating any metropolis. She bridges the gap between cultural awareness and social presence, refining the style needed for the world’s most prestigious environments.</p>
+    
+    <div style="margin-top: 60px;">
+      <div class="pillar-label">Contact</div>
+      <a href="mailto:hello@ritasantvalentinas.com" style="color:#fff; text-decoration: none;">hello@ritasantvalentinas.com</a><br>
+      <a href="https://www.instagram.com/ritadefab" style="color:#fff; text-decoration: none;">@ritadefab</a><br>
+      <a href="https://www.linkedin.com/in/santvalentinas/" style="color:#fff; text-decoration: none;">LinkedIn</a>
+    </div>
+  </div>
+</section>
